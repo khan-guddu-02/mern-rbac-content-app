@@ -21,7 +21,7 @@ export const register = asyncHandler(async (req, res) => {
   const user = await User.create({
     email,
     password: hashed,
-    role: role || "user" // ✅ admin/user support
+    role: role || "user" 
   });
 
   res.json({
